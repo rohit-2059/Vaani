@@ -1,0 +1,50 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Start Metro Bundler",
+			"type": "shell",
+			"command": "npm start",
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run Android",
+			"type": "shell",
+			"command": "npm run android",
+			"group": "build",
+			"dependsOn": "Start Metro Bundler",
+			"problemMatcher": []
+		},
+		{
+			"label": "Run iOS",
+			"type": "shell",
+			"command": "npm run ios",
+			"group": "build",
+			"dependsOn": "Start Metro Bundler",
+			"problemMatcher": []
+		},
+		{
+			"label": "Clean Project",
+			"type": "shell",
+			"command": "npx react-native clean",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Lint Code",
+			"type": "shell",
+			"command": "npm run lint",
+			"group": "build",
+			"problemMatcher": ["$eslint-stylish"]
+		},
+		{
+			"label": "Run Tests",
+			"type": "shell",
+			"command": "npm test",
+			"group": "test",
+			"problemMatcher": []
+		}
+	]
+}

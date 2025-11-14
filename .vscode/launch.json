@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Android",
+            "type": "reactnativedirect",
+            "request": "launch",
+            "platform": "android",
+            "cwd": "${workspaceFolder}",
+            "sourceMaps": true
+        },
+        {
+            "name": "Debug iOS",
+            "type": "reactnativedirect", 
+            "request": "launch",
+            "platform": "ios",
+            "cwd": "${workspaceFolder}",
+            "sourceMaps": true
+        },
+        {
+            "name": "Attach to packager",
+            "type": "reactnativedirect",
+            "request": "attach",
+            "cwd": "${workspaceFolder}",
+            "sourceMaps": true
+        }
+    ]
+}
